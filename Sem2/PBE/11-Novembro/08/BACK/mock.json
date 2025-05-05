@@ -1,0 +1,52 @@
+[
+    {
+        "cliente_id": 1,
+        "nome": "Laila",
+        "cpf": "24327434455",
+        "email": "lailacmacedo07@gmail.com",
+        "endereco": "rua da saudade n40",
+        "data_nascimento": "2007-07-20",
+        "data_cadastro": "2024-11-08",
+        "telefones": [
+            {
+                "telefones_id": 1,
+                "numero": "19 98995-0515",
+                "tipo": "celular"
+            }
+        ],
+        "carros": [
+            {
+                "carro_id": 2,
+                "marca_veiculo": "Chevrolet",
+                "modelo_veiculo": "Camaro ",
+                "ano_veiculo": "2018-10-31",
+                "fabricacao_veiculo": "2018-10-31"
+            }
+        ]
+    },
+    {
+        "cliente_id": 2,
+        "nome": "Beatriz",
+        "cpf": "24327434485",
+        "email": "beatriz.vizeu@gmail.com",
+        "endereco": "rua da saudade n90",
+        "data_nascimento": "2008-06-19",
+        "data_cadastro": "2024-11-08",
+        "telefones": [
+            {
+                "telefones_id": 2,
+                "numero": "19 98995-0515",
+                "tipo": "celular"
+            }
+        ],
+        "carros": [
+            {
+                "carro_id": 2,
+                "marca_veiculo": "Chevrolet",
+                "modelo_veiculo": "Camaro ",
+                "ano_veiculo": "2018-10-31",
+                "fabricacao_veiculo": "2018-10-31"
+            }
+        ]
+    }
+]

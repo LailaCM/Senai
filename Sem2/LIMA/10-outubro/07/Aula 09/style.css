@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container1{
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+
+    & .div1{
+        width: 15vw;
+        height: 15vh;
+        background: red;
+    }
+
+    & .div2{
+        width: 15vw;
+        height: 15vh;
+        background: orange;
+    }
+
+    & .div3{
+        width: 15vw;
+        height: 15vh;
+        background: yellow;
+    }
+
+    & .div4{
+        width: 15vw;
+        height: 15vh;
+        background: green;
+    }
+
+    & .div5{
+        width: 15vw;
+        height: 15vh;
+        background: blue;
+    }
+
+    & .div6{
+        width: 15vw;
+        height: 15vh;
+        background: purple;
+    }
+}
+
+.container2{
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+
+    & .div7 {
+        width: 0;
+        height: 0;
+        border-left: 7.5vw solid transparent;
+        border-right: 7.5vw solid transparent;
+        border-bottom: 15vh solid red;
+    }
+    
+
+    & .div8{
+        width: 0;
+        height: 0;
+        border-left: 7.5vw solid transparent;
+        border-right: 7.5vw solid transparent;
+        border-bottom: 15vh solid orange;
+    }
+
+    & .div9{
+        width: 0;
+        height: 0;
+        border-left: 7.5vw solid transparent;
+        border-right: 7.5vw solid transparent;
+        border-bottom: 15vh solid yellow;
+    }
+
+    & .div10{
+        width: 0;
+        height: 0;
+        border-left: 7.5vw solid transparent;
+        border-right: 7.5vw solid transparent;
+        border-bottom: 15vh solid green;
+    }
+
+    & .div11{
+        width: 0;
+        height: 0;
+        border-left: 7.5vw solid transparent;
+        border-right: 7.5vw solid transparent;
+        border-bottom: 15vh solid blue;
+    }
+
+    & .div12{
+        width: 0;
+        height: 0;
+        border-left: 7.5vw solid transparent;
+        border-right: 7.5vw solid transparent;
+        border-bottom: 15vh solid purple;
+    }
+}
+.container3{
+    width: 100vw;
+    background: rgb(255, 255, 255);
+    display: flex;
+
+    & .div13{
+        width: 15vw;
+        height: 15vh;
+        border-radius:50vh;
+        background: red;
+    }
+
+    & .div14{
+        width: 15vw;
+        height: 15vh;
+        border-radius:50vh;
+        background: orange;
+    }
+
+    & .div15{
+        width: 15vw;
+        height: 15vh;
+        border-radius:50vh;
+        background: yellow;
+    }
+
+    & .div16{
+        width: 15vw;
+        height: 15vh;
+        border-radius:50vh;
+        background: green;
+    }
+
+    & .div17{
+        width: 15vw;
+        height: 15vh;
+        border-radius:50vh;
+        background: blue;
+    }
+    & .div18{
+        width: 15vw;
+        height: 15vh;
+        border-radius:50vh;
+        background: purple;
+    }
+}

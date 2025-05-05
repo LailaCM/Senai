@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nome": "Bia",
+        "avatar": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs3/250798730/original/6e686369f3dd242095a17b7d3c4261b219b6e42f/create-animals-cute-animation.png",
+        "cidade": "Amparo"
+    },
+    {
+        "id": 2,
+        "nome": "Eloa",
+        "avatar": "https://fiverr-res.cloudinary.com/images/t_smartwm/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/c143a05412e66ac031cb2c59c16d86b8-1675023752/bearded%20dragon/create-animals-cute-animation.png",
+        "cidade": "Amparo"
+    },
+    {
+        "id": 3,
+        "nome": "Laila",
+        "avatar": "https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs2/250798730/original/4efa40a915817061c77ab754806b7a559034add0/create-animals-cute-animation.png",
+        "cidade": "São Paulo"
+    }
+]

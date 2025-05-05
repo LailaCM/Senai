@@ -1,0 +1,13 @@
+{ "nome": "Napolitana", "descricao": "Chocolate, geleia de morango, creme de leite ninho", "valor": 33.00 }
+{ "nome": "Margherita", "descricao": "Molho de tomate, mussarela e manjericão", "valor": 30.50 }
+{ "nome": "Pepperoni", "descricao": "Molho de tomate, mussarela e pepperoni", "valor": 35.00 }
+{ "nome": "Frango com Catupiry", "descricao": "Frango desfiado, catupiry, mussarela", "valor": 38.00 }
+{ "nome": "Quatro Queijos", "descricao": "Mussarela, provolone, parmesão e gorgonzola", "valor": 40.00 }
+{ "nome": "Calabresa", "descricao": "Molho de tomate, calabresa e cebola", "valor": 32.00 }
+{ "nome": "Portuguesa", "descricao": "Presunto, ovos, cebola, azeitona e mussarela", "valor": 36.00 }
+{ "nome": "Vegetariana", "descricao": "Tomate, pimentão, champignon e mussarela", "valor": 34.50 }
+{ "nome": "Bacon Supreme", "descricao": "Bacon, cheddar e mussarela", "valor": 42.00 }
+{ "nome": "Carne Seca", "descricao": "Carne seca desfiada, catupiry e mussarela", "valor": 45.00 }
+{ "nome": "Chocolate", "descricao": "Chocolate ao leite e granulado", "valor": 30.00 }
+
+  

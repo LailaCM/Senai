@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Média</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Média</h1>
+    </header>
+    <main>
+        <div class="container">
+            <label for="nota1">Digite a primeira nota:</label>
+            <input type="number" required id="nota1" placeholder="Ex: 8.5">
+            
+            <label for="nota2">Digite a segunda nota:</label>
+            <input type="number" required id="nota2" placeholder="Ex: 7.0">
+            
+            <button onclick="calcularResultado()">Calcular</button>
+            <p id="mensagem"></p>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

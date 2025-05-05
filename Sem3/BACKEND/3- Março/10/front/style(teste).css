@@ -1,0 +1,166 @@
+/* Paleta de Cores */
+:root {
+    --p1: #f9f9f9; /* Fundo geral */
+    --p2: #4A148C; /* Cabeçalho e rodapé */
+    --p3: #ffffff; /* Texto principal e fundo do modal */
+    --p4: #7B1FA2; /* Botões */
+    --p5: #D1C4E9; /* Detalhes e hover */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: var(--p1);
+    color: var(--p2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: var(--p2);
+    color: var(--p3);
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.container a {
+    color: var(--p3);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+main {
+    width: 80%;
+    margin: 20px auto;
+    background-color: var(--p3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+main .cadastro {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+main table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+main th,
+main td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid var(--p5);
+}
+
+main th {
+    background-color: var(--p2);
+    color: var(--p3);
+}
+
+main tr:nth-child(even) {
+    background-color: var(--p5);
+}
+
+main tr:hover {
+    background-color: var(--p4);
+    color: var(--p3);
+}
+
+footer {
+    background-color: var(--p2);
+    color: var(--p3);
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: var(--p4);
+    color: var(--p3);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--p5);
+    color: var(--p2);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-conteudo {
+    background-color: var(--p3);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-conteudo input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--p5);
+    border-radius: 5px;
+}
+
+.fechar {
+    color: var(--p2);
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: var(--p4);
+}

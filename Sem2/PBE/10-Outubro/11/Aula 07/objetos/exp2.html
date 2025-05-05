@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <p id="paragrafo"></p>
+</body>
+    <script>
+        class Automovel{
+            modelo;
+            cor;
+            placa;
+            valor;
+            calcDesconto(porcentagem) {
+                return this.valor * porcentagem/100;
+            }
+        }
+        const p = document.querySelector("#paragrafo");
+        const fiat = new Automovel();
+        fiat.modelo = "Uno";
+        fiat.cor = "Amarelo";
+        fiat.placa = "AAA-A1A11";
+        fiat.valor = 15000.0;
+        p.innerHTML = "Modelo: "+ fiat.modelo;
+        p.innerHTML += "<br> Cor: "+ fiat.cor;
+        p.innerHTML += "<br> Placa: "+ fiat.placa;
+        p.innerHTML += "<br> Valor: R$ "+ fiat.valor.toFixed(2);
+        p.innerHTML += "<br> Desconto: R$ "+ fiat.calcDesconto(10).toFixed(2);
+    </script>
+</html>

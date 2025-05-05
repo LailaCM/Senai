@@ -1,0 +1,29 @@
+body{
+    background: grey;
+}
+
+.container{
+    width:100%;
+}
+
+input{
+    width: 250px;
+    height: 100px;
+    border-radius: 15px;
+    border-color: blue;
+    font-size: 24px;
+
+}
+button{
+    width: 250px;
+    height: 100px;
+    border-radius: 15px;
+    border-color: blue;
+    background: green;
+    color: black;
+    font-family: 'Courier New', Courier, monospace ;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+}

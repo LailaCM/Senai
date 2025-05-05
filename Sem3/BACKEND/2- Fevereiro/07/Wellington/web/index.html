@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clínica Médica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Clínica Médica</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro / Edição</h2>
+            <form id="cadastro">
+                <label for="nome">Nome completo</label>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+                <label for="cpf">CPF</label>
+                <input type="number" name="cpf" placeholder="Digite seu CPF" required>
+                <label for="nascimento">Data de nascimento</label>
+                <input type="date" name="nascimento" required>
+                <button type="submit">Cadastrar</button>
+                <button type="button" id="cancelarEdicao" style="display: none;">Cancelar</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Clientes</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Nascimento</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="clientes"></tbody>
+            </table>
+        </section>
+    </main>
+    
+    <footer id="msg">Mensagem</footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

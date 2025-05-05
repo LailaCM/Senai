@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    box-sizing: border-box; /* Garante que padding e bordas sejam incluídos no tamanho total */
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#titulo {
+    margin: 5vh;
+    font-size: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#text {
+    margin: 5vh;
+    font-size: 3vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    align-items: left;
+}
+
+header, footer {
+    background: rgb(217, 217, 217);
+    color: rgb(96, 28, 28);
+    padding: 2vh;
+    text-align: center;
+    width: 100vw;
+
+    & .container {
+        width: 100vw;
+    }
+
+    & .container img {
+        width: 25vw;
+        height: auto;
+    }
+}
+
+nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+input {
+    margin-top: 5vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2vh;
+    border-radius: 3vh;
+    border: 1px solid #333;
+    margin: 2vh;
+    width: 90%; /* Ajustado para ocupar 90% da largura disponível */
+    max-width: 30vw; /* Limita a largura máxima */
+}
+
+.botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & #botao3,
+    & #botao4,
+    & #botao5,
+    & #botao6,
+    & #botao7,
+    & #botao8 {
+        text-decoration: none;
+        margin: 5vh;
+        background-color: rgb(140, 7, 7);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 3vh;
+        border-radius: 3vh;
+        cursor: pointer;
+        width: 90%; /* Ajustado para 90% da largura disponível */
+        max-width: 15vw; /* Define um limite máximo para a largura */
+        text-align: center;
+    }
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.botoes #login-btn,
+.botoes #cadastro-btn {
+    background-color: rgb(195, 188, 0);
+    color: white;
+    border: none;
+    padding: 3vh;
+    border-radius: 3vh;
+    cursor: pointer;
+    margin: 3vh;
+    width: 90%; /* Mantém a largura relativa */
+    max-width: 50vw; /* Limita o máximo de largura em telas grandes */
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+}

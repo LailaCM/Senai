@@ -1,0 +1,20 @@
+footer {
+    background-color: var(--p2);
+    color: var(--p4);
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 -2px 5px var(--pt1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: var(--p4);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

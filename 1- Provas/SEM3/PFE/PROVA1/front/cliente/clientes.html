@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="../body.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../docs/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../produtos/produtos.html">Produtos</a></li>
+                <li><a href="../funcionarios/funcionarios.html">Funcionários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <container class="cadastro">
+            <button id="NovoCliente">Novo Cliente</button>
+        </container>
+        <div id="modalcliente" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <form id="cadastro">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    <label for="cpf">CPF</label>
+                    <input type="number" id="cpf" name="cpf" placeholder="Digite seu cpf" required>
+                    <label for="email">E-mail</label>
+                    <input type="text" id="email" name="email" placeholder="Digite seu email" required>
+                    <label for="logradouro">Logradouro</label>
+                    <input type="text" id="logradouro" name="logradouro" placeholder="Digite seu logradouro" required>
+                    <button type="submit">Cadastrar</button>
+                    <button type="button" id="cancelarEdicao" style="display: none;">Cancelar</button>
+                </form>
+            </div>
+        </div>
+
+        <container class="apresentar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>E-mail</th>
+                        <th>Logradouro</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="aluno">
+                    <tr>
+                        <td>Beatriz Vizeu</td>
+                        <td>123.456.789-00</td>
+                        <td>beatriz.vizeu@email.com</td>
+                        <td>Rua das Flores, 123</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eloá Florêncio</td>
+                        <td>987.654.321-00</td>
+                        <td>eloapflorencio@email.com</td>
+                        <td>Avenida Central, 456</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Laila Casadei</td>
+                        <td>456.789.123-00</td>
+                        <td>lailacmacedo07@email.com</td>
+                        <td>Praça da Liberdade, 789</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </container>
+    </main>
+    <footer>
+        <div id="rodape">
+            <h2>Produzido por Laila Casadei</h2>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

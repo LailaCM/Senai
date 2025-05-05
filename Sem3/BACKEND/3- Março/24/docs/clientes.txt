@@ -1,0 +1,6 @@
+{ "nome": "Gabriel Lavaque", "telefone": "11999990006", "logradouro": "Rua F", "numero": "60", "bairro": "Parque", "referencia": "Perto do shopping" }
+{ "nome": "João Silva", "telefone": "11999990001", "logradouro": "Rua A", "numero": "10", "bairro": "Centro", "referencia": "Próximo ao mercado" }
+{ "nome": "Maria Santos", "telefone": "11999990002", "logradouro": "Rua B", "numero": "20", "bairro": "Jardim", "referencia": "Perto da escola" }
+{ "nome": "Carlos Oliveira", "telefone": "11999990003", "logradouro": "Rua C", "numero": "30", "bairro": "Vila Nova", "referencia": "Em frente à padaria" }
+{ "nome": "Ana Souza", "telefone": "11999990004", "logradouro": "Rua D", "numero": "40", "bairro": "Industrial", "referencia": "Próximo ao hospital" }
+{ "nome": "Pedro Lima", "telefone": "11999990005", "logradouro": "Rua E", "numero": "50", "bairro": "Residencial", "referencia": "Ao lado da praça" }

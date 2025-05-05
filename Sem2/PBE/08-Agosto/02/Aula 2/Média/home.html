@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>Calculadora de média</header>
+    <h1 id="titulo">Descubra qual é a sua média</h1>
+
+    <input type="text" id="nome" placeholder="Digite seu nome completo">
+    <input type="number" id="n1" placeholder="Digite sua primeira nota">
+    <input type="number" id="n2" placeholder="Digite sua segunda nota">
+    <input type="number" id="n3" placeholder="Digite sua teceira nota">
+    <nav>
+        <!-- <button onclick="m.innerHTML=media(n1.value,n2.value,n3.value)">Cadastrar</button> -->
+    </nav>
+    <input type="submit" value="Cadastrar" id="botao" onclick="Cadastrar()">
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Média</th>
+                <th>Situação</th>
+            </tr>
+        <tbody id="tabela_resultado">
+        </tbody>
+        </thead>
+    </table>
+</body>
+<footer>
+</footer>
+<script src="script.js"></script>
+
+</html>

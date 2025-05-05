@@ -1,0 +1,48 @@
+header {
+    background-color: var(--p4);
+    padding: 20px;
+    box-shadow: 0 2px 5px var(--pt1);
+}
+
+header h1 {
+    color: var(--p1);
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--p2);
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: var(--p1);
+}
+
+nav button {
+    background-color: var(--p1);
+    color: var(--p4);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: var(--pt2);
+}

@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(203, 203, 203);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+#titulo {
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    align-items: center;
+}
+
+#text {
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align:left;
+    align-items: left;
+}
+
+header, footer {
+    background-color: rgb(78, 78, 80);
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+}
+
+
+#botao:hover,
+#botao2:hover,
+#botao3:hover,
+#botao4:hover,
+#botao5:hover {
+    background-color: rgb(153, 153, 153);
+    color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+input {
+    margin-top: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #333;
+    margin: 10px;
+    width: 300px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & #botao {
+        text-decoration: none;
+        margin: 500px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+
+    & #botao2 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(210, 108, 5);
+        color:#fff; 
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+    & #botao3 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(204, 185, 16);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+    & #botao4 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(16, 137, 14);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+    & #botao5 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(7, 111, 143);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+    & #botao6 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(7, 25, 142);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+    & #botao7 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(85, 3, 143);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+    & #botao8 {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(143, 3, 136);
+        color: rgb(255, 255, 255);
+        border: none;
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+}

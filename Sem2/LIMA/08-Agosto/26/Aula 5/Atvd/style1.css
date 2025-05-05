@@ -1,0 +1,109 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    display: flex;
+    margin: 10px;
+    
+    & .container2{
+        text-align: left;
+        width: 20%;
+        padding: 15px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+}
+
+.container3{
+    width: 5100%;
+    padding: 10px;
+    margin: 100px;
+    background: rgb(255, 255, 255);
+
+}
+
+.container4{
+    margin: 10px;
+    width: 100%;
+    padding: 100px;
+    background: rgb(255, 255, 255);
+    display: flex;
+
+    & .i1{
+        margin: 20px;
+    }
+    & .i2{
+        margin: 20px;
+    }
+    & .i3{
+        margin: 20px;
+    }
+    & .i4{
+        margin: 20px;
+    }
+    & .i5{
+        margin: 20px;
+    }
+}
+
+.container5{
+    margin: 10px;
+    width: 100%;
+    padding: 100px;
+    background: rgb(255, 255, 255);
+    display: flex;
+
+    & .i1{
+        margin: 20px;
+    }
+    & .i2{
+        margin: 20px;
+    }
+    & .i3{
+        margin: 20px;
+    }
+    & .i4{
+        margin: 20px;
+    }
+    & .i5{
+        margin: 20px;
+    }
+}
+
+.containerbody {
+    background:  rgb(87, 138, 87);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.containertexto{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+
+    & .divbanner2 img{
+        width: 300px;
+        height: auto;
+        border-radius: 0px;
+    }
+    & .divtexto h2{
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        font-size: 25px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 50px;
+    }
+
+}

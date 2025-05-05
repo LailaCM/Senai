@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos</title>
+</head>
+<body>
+    <p id="paragrafo"></p>
+</body>
+    <script>
+        const obj = {} // Objeto vazio
+        const fiat = {
+            modelo:"UNO",
+            cor:"Amarelo",
+            placa:"AAA-1A11",
+            valor: 15000.00
+        }
+        const p = document.getElementById("paragrafo");
+        p.innerHTML = "Modelo: "+ fiat.modelo;
+        p.innerHTML += "<br> Cor: "+ fiat.cor;
+        p.innerHTML += "<br> Placa: "+ fiat.placa;
+        p.innerHTML += "<br> Valor: R$ "+ fiat.valor.toFixed(2);
+    </script>
+</html>

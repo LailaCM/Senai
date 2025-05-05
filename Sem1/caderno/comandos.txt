@@ -1,0 +1,8 @@
+-ALGARÍTIMO CONTADOR-
+
+++ Conta mais um
+-- Conta menos um
++= Mais escolher passo
+=- Menos escolher passo
+*= Vezes escolher passo
+/= Dividido escolher passo

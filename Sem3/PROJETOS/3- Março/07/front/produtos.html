@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastro dos produtos</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro</h2>
+            <form id="cadastro">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                <label for="descricao">Descrição</label>
+                <input type="text" id="descricao" name="descricao" placeholder="Digite a descricao" required>
+                <label for="quantidade">Quantidade</label>
+                <input type="number" id="quantidade" name="quantidade" placeholder="Digite a quantidade" required>
+                <label for="precocompra">Preço da compra</label>
+                <input type="number" id="precocompra" name="precocompra" placeholder="Digite o preço da compra" required>
+                <label for="precovenda">Preço da venda</label>
+                <input type="number" id="precovenda" name="precovenda" placeholder="Digite o preço da venda" required>
+                <label for="fornecedor">Fornecedor</label>
+                <input type="text" id="fornecedor" name="fornecedor" placeholder="Digite o fornecedor" required>
+                <button type="submit">Cadastrar</button>  
+                <button type="button" id="cancelarEdicao" style="display: none;">Cancelar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Produtos Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Quantidade</th>
+                        <th>Preço da compra</th>
+                        <th>Preço da venda</th>
+                        <th>Fornecedor</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="produtos"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <h2 id="msg">Irei notificar suas ações!</h2>
+        <br>
+        <div id="container">
+            <h2>Produzido por Laila Casadei</h2>
+        </div>
+    </footer>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>

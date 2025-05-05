@@ -1,0 +1,7 @@
+{ "cliente": 1, "valor": 65.50 }
+{ "cliente": 2, "valor": 38.00 }
+{ "cliente": 3, "valor": 112.00}
+{ "cliente": 4, "valor": 76.50 }
+{ "cliente": 5, "valor": 45.00 }
+
+  

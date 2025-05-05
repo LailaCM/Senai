@@ -1,0 +1,20 @@
+{
+	"nome":"Marina",
+	"especialidade":"Mat"
+}
+{
+	"nome":"Eliana",
+	"especialidade":"PT"
+}
+{
+	"nome":"Nivaldo",
+	"especialidade":"Inglês"
+}
+{
+	"nome":"Edilaine",
+	"especialidade":"Bio"
+}
+{
+	"nome":"Wellington",
+	"especialidade":"ADS"
+}

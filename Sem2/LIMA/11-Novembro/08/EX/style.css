@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: rgb(240, 240, 240);
+}
+
+header{
+    width: 100vw;
+
+    & .container {
+        background: rgb(101, 0, 59);
+        display: flex;
+        padding: 1vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    & .titulo{
+        width: 30vw;
+
+        & h1{
+            color: white;
+            font-size: 1.5vw;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+
+    & .links{
+        width: 33vw;
+
+        & a{
+            margin: 1vw;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5vw;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    }
+
+    & .sociais{
+        width: 15vw;
+
+        & a{
+            text-decoration: none;
+            font-size: 1.5vw;
+            margin: 1vw;
+            color: rgb(255, 255, 255);
+            background: rgb(163, 50, 108);
+            padding: 0.5vw;
+            border-radius: 1vw;
+            height: 2vh;
+            width: 2vw;
+        }
+
+        & a:hover{
+            text-decoration: none;
+            font-size: 1.5vw;
+            margin: 1vw;
+            cursor: pointer;
+            color: white;
+            background: rgb(202, 87, 147);
+            padding: 0.8vw;
+            border-radius: 1vw;
+            height: 2vh;
+            width: 2vw;
+            
+        }
+    }
+}
+
+main{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+
+    & .banner img{
+        width: 80vw;
+        border-radius: 2vw;
+        box-shadow: 0.3vw 0.3vw 0.3vw rgb(134, 10, 82) ;
+    }
+}
+
+.cards{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+
+    & .div1, .div2, .div3{
+        width: 15vw;
+        padding: 5vw;
+        border: 3px solid rgb(161, 24, 104);
+        background: white;
+        margin: 0.5vw;
+        border-radius: 2vw;
+    }
+}

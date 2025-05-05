@@ -1,0 +1,10 @@
+{ "pedido": 1, "pizza": 1, "quantidade": 1, "valor": 30.50, "subtotal": 30.50 }
+{ "pedido": 1, "pizza": 2, "quantidade": 1, "valor": 35.00, "subtotal": 35.00 }
+{ "pedido": 2, "pizza": 3, "quantidade": 1, "valor": 38.00, "subtotal": 38.00 }
+{ "pedido": 3, "pizza": 4, "quantidade": 1, "valor": 40.00, "subtotal": 40.00 }
+{ "pedido": 3, "pizza": 5, "quantidade": 1, "valor": 32.00, "subtotal": 32.00 }
+{ "pedido": 3, "pizza": 6, "quantidade": 1, "valor": 40.00, "subtotal": 40.00 }
+{ "pedido": 4, "pizza": 7, "quantidade": 1, "valor": 34.50, "subtotal": 34.50 }
+{ "pedido": 4, "pizza": 8, "quantidade": 1, "valor": 42.00, "subtotal": 42.00 }
+{ "pedido": 5, "pizza": 9, "quantidade": 1, "valor": 45.00, "subtotal": 45.00 }
+  

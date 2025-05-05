@@ -1,0 +1,241 @@
+/* Geral */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, var(--p3), var(--p4));
+    color: var(--p1);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    padding: 20px;
+    background-color: var(--p4);
+    box-shadow: 0 2px 5px var(--pt1);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--pt1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal.oculto {
+    display: none;
+}
+
+.janela {
+    align-items: center;
+    background: var(--p4);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px var(--pt2);
+    width: 90%;
+    max-width: 500px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.janela h2 {
+    color: var(--p1);
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.janela button {
+    background: var(--p1);
+    color: var(--p4);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.janela button:hover {
+    background: var(--p2);
+}
+
+.janela .fechar {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--p1);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.janela .fechar:hover {
+    color: var(--p2);
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid var(--p3);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    outline: none;
+    border-color: var(--p1);
+    box-shadow: 0 0 5px var(--pt1);
+}
+
+form button[type="submit"] {
+    background: var(--p1);
+    color: var(--p4);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+form button[type="submit"]:hover {
+    background: var(--p2);
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--p4);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px var(--pt1);
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--p3);
+}
+
+table th {
+    background-color: var(--p1);
+    color: var(--p4);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+}
+
+table tr:hover {
+    background-color: var(--p3);
+}
+
+table td {
+    font-size: 0.9rem;
+}
+
+/* Botões na tabela */
+table button {
+    background: var(--p1);
+    color: var(--p4);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background 0.3s;
+}
+
+table button:hover {
+    background: var(--p2);
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Estilo para o container dos cards */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--p4); 
+}
+
+/* Estilo para cada card */
+.card {
+    background-color: var(--p3);  
+    border: 1px solid var(--p2); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--pt1); 
+    width: 250px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px var(--pt2);
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    color: var(--p1);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: var(--p2);
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: var(--p1);
+    color: var(--p4);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: var(--p2);
+}
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Aluno</h1>
+        <div class="container">
+            <a href="alunos.html">Alunos</a>
+            <a href="disciplinas.html">Disciplinas</a>
+            <a href="professores.html">Professores</a>
+            <a href="turmas.html">Turmas</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <container class="cadastro">
+            <button id="NovoAluno">Novo Aluno</button>
+        </container>
+        <div id="modalAluno" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <form id="cadastro">
+                    <label for="ra">RA</label>
+                    <input type="text" id="ra" name="ra" placeholder="Digite seu ra" required>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    <label for="nasc">Data de nascimento</label>
+                    <input type="date" id="nasc" name="nasc" placeholder="Sua data de nascimento" required>
+                    <button type="submit">Cadastrar</button>  
+                    <button type="button" id="cancelarEdicao" style="display: none;">Cancelar</button>
+                </form>
+            </div>
+        </div>
+
+        <container class="apresentaralunos">
+            <table>
+                <thead>
+                    <tr>
+                        <th>RA</th>
+                        <th>Nome</th>
+                        <th>Data de Nascimento</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="aluno"></tbody>
+            </table>
+        </container>
+    </main>
+    <footer>
+        <h2 id="notificacao">Irei notificar suas ações!</h2>
+        <br>
+        <div id="rodape">
+            <h2>Produzido por Laila Casadei</h2>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+:root {
+    --p1: #ab437c;
+    --p2: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--p1);
+    color: var(--p2);
+}

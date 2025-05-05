@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira</title>
+    <style>
+        body {
+            background-color: #787693; /* Fundo cinza */
+            font-family: Arial, sans-serif;
+        }
+       .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f6ff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 50px;
+            display: flex; /* Adicionado para que o container seja flexível */
+        }
+       .formulario {
+            flex: 1; 
+        }
+       .resultado {
+            background-color: #fff;
+            padding: 20px;
+            margin-left: 20px; 
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 200px; /* Largura do balão de resultado */
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #704caf;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+       .negativo {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formulario">
+            <h2>Preencha suas informações financeiras</h2>
+            <form id="form">
+                <input type="text" id="nome" placeholder="Nome">
+                <input type="text" id="salario" placeholder="Salário">
+                <input type="text" id="despesas" placeholder="Despesas">
+                <input type="text" id="dataPagamento" placeholder="Data de pagamento">
+                <input type="submit" value="Confirmar">
+            </form>
+        </div>
+        <div id="resultado" class="resultado" style="display: none;"></div>
+    </div>
+
+    <script>
+        document.getElementById('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nome = document.getElementById('nome').value;
+            const salario = parseFloat(document.getElementById('salario').value);
+            const despesas = parseFloat(document.getElementById('despesas').value);
+            const dataPagamento = document.getElementById('dataPagamento').value;
+
+            const saldo = salario - despesas;
+
+            const resultadoDiv = document.getElementById('resultado');
+            resultadoDiv.innerHTML = `
+                <h2>Informações Financeiras</h2>
+                <p>Nome: ${nome}</p>
+                <p>Salário: ${salario}</p>
+                <p>Despesas: ${despesas}</p>
+                <p>Data de pagamento: ${dataPagamento}</p>
+                <h3>Saldo: 5</span></h3>
+            `;
+            resultadoDiv.style.display = 'block';
+        });
+    </script>
+</body>
+</html>

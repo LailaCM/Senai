@@ -1,0 +1,89 @@
+{ "aluno": "0001", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0001", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0001", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0001", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0001", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0002", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0002", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0002", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0002", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0002", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0003", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0003", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0003", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0003", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0003", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0004", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0004", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0004", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0004", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0004", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0005", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0005", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0005", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0005", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0005", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0006", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0006", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0006", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0006", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0006", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0007", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0007", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0007", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0007", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0007", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0008", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0008", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0008", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0008", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0008", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0009", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0009", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0009", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0009", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0009", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0010", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0010", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0010", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0010", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0010", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0011", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0011", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0011", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0011", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0011", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "0012", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "0012", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "0012", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "0012", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "0012", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "2194", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "2194", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "2194", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "2194", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "2194", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "2476", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "2476", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "2476", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "2476", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "2476", "disciplina": 5, "data": "2024-12-12" }
+
+{ "aluno": "2486", "disciplina": 1, "data": "2024-12-12" }
+{ "aluno": "2486", "disciplina": 2, "data": "2024-12-12" }
+{ "aluno": "2486", "disciplina": 3, "data": "2024-12-12" }
+{ "aluno": "2486", "disciplina": 4, "data": "2024-12-12" }
+{ "aluno": "2486", "disciplina": 5, "data": "2024-12-12" }

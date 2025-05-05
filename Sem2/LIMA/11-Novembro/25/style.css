@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background: rgb(38, 38, 38);
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5vw;
+
+        & .titulo {
+            margin-left: 10vw;
+            width: 30vw;
+            color: white;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1vw;
+        }
+
+        & .links {
+            width: 20vw;
+
+            & a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2vw;
+                margin: 1vw;
+            }
+
+            & a:hover {
+                text-decoration: none;
+                color: pink;
+                cursor: pointer;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1.2vw;
+                margin: 1vw;
+            }
+        }
+    }
+}
+
+main {
+    width: 100vw;
+    min-height: calc(100vh - (altura do header + altura do footer));
+    background-image: url('img/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container2 {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+
+    & .div1 {
+        height: 30vw;
+        box-shadow: 0vw 0vw 0.5vw rgb(199, 199, 199);
+        align-items: center;
+        justify-content: center;
+        width: 26vw;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0.5vw;
+        text-align: center;
+        margin: 2vw;
+        padding: 2vw;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: left;
+        font-size: 1.2vw;
+
+        & img {
+            align-items: center;
+            justify-content: center;
+            width: 15vw;
+            border-radius: 0.5vw;
+            height: auto;
+        }
+
+        & .botao {
+            margin-top: 1vw;
+            background: rgb(55, 84, 251);
+            padding: 1.2vw;
+            border: none;
+            border-radius: 0.5vw;
+            color: white;
+            font-size: 1.2vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
+
+footer {
+    background: black;
+    padding: 4vw;
+    margin-top: 2vw;
+    text-align: center;
+    color: white;
+    font-size: 1vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 900px) {
+    .container2 {
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    & .div1 {
+        width: 90vw;
+        margin: 2vw 0;
+        font-size: 4vw;
+    }
+
+    & .div1 img {
+        width: 100%;
+    }
+
+    & .div1 .botao {
+        font-size: 3vw;
+        padding: 2vw;
+    }
+}

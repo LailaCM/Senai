@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="../body.css">
+    <link rel="stylesheet" href="../header.css">
+    <link rel="stylesheet" href="../footer.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../docs/logo.png" alt="Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home</a></li>
+                <li><a href="../cliente/clientes.html">Clientes</a></li>
+                <li><a href="../funcionarios/funcionarios.html">Funcionários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <container class="cadastro">
+            <button id="NovoProduto">Novo Produto</button>
+        </container>
+        <div id="modalProduto" class="modal">
+            <div class="modal-conteudo">
+                <span class="fechar">&times;</span>
+                <form id="cadastro">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    <label for="descricao">Descrição</label>
+                    <input type="text" id="descricao" name="descricao" placeholder="Digite a descrição do produto" required>
+                    <label for="va.custo">Valor de Custo</label>   
+                    <input type="number" id="va.custo" name="va.custo" placeholder="Digite o valor de custo do produto" required>
+                    <label for="va.final">Valor Final</label>
+                    <input type="number" id="va.final" name="va.final" placeholder="Digite o valor final do produto" required>
+                    <button type="submit">Cadastrar</button>
+                    <button type="button" id="cancelarEdicao" style="display: none;">Cancelar</button>
+                </form>
+            </div>
+        </div>
+
+        <container class="apresentar">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Valor de Custo</th>
+                        <th>Valor Final</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="produto">
+                    <tr>
+                        <td>Rosa Vermelha</td>
+                        <td>Rosa Vermelha</td>
+                        <td>R$ 150,00</td>
+                        <td>R$ 200,00</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Girassol</td>
+                        <td>Girassol</td>
+                        <td>R$ 100,00</td>
+                        <td>R$ 150,00</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Lírio</td>
+                        <td>Lírio</td>
+                        <td>R$ 120,00</td>
+                        <td>R$ 180,00</td>
+                        <td>
+                            <button class="btn-editar">Editar</button>
+                            <button class="btn-excluir">Excluir</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </container>
+    </main>
+    <footer>
+        <div id="rodape">
+            <h2>Produzido por Laila Casadei</h2>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

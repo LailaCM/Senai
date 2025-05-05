@@ -1,0 +1,18 @@
+:root {
+    --p1: #f0f0f0;
+    --p2: #814003;
+    --p3: #ffffff; 
+    --p4: #c07346; 
+    --p5: #eacdb4; 
+}
+
+footer {
+    background-color: var(--p2);
+    color: var(--p3);
+    padding: 10px 0;
+    text-align: center;
+    position:relative; 
+    bottom: 0;
+    width: 100%;
+    margin-top: 0px; 
+}

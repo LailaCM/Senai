@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas</title>
+</head>
+<body>
+    <p id="paragrafo"></p>
+</body>
+    <script>
+        class Produto{
+            Produto;
+            preco;
+            quantidade;
+            calcTotal() {
+                return this.preco * this.quantidade;
+            }
+        }
+        const p = document.querySelector("#paragrafo");
+        const prod = new Produto();
+        prod.produto="Fones";
+        prod.preco = 10;
+        prod.quantidade = 2;
+        p.innerHTML = "Produto: "+ prod.produto;
+        p.innerHTML += "<br> Preço: R$ : "+ prod.preco;
+        p.innerHTML += "<br> Quantidade: "+ prod.quantidade;
+        p.innerHTML += "<br> Total: R$ "+ prod.calcTotal().toFixed(2);
+    </script>
+</html>

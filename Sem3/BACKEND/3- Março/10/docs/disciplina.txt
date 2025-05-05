@@ -1,0 +1,75 @@
+{
+	"nome":"Mat",
+	"turma":1,
+	"professor":1
+}
+{
+	"nome":"PT",
+	"turma":1,
+	"professor":2
+}
+{
+	"nome":"Inglês",
+	"turma":1,
+	"professor":3
+}
+{
+	"nome":"Bio",
+	"turma":1,
+	"professor":4
+}
+{
+	"nome":"ADS",
+	"turma":1,
+	"professor":5
+}
+{
+	"nome":"Mat",
+	"turma":2,
+	"professor":1
+}
+{
+	"nome":"PT",
+	"turma":2,
+	"professor":2
+}
+{
+	"nome":"Inglês",
+	"turma":2,
+	"professor":3
+}
+{
+	"nome":"Bio",
+	"turma":2,
+	"professor":4
+}
+{
+	"nome":"ADS",
+	"turma":2,
+	"professor":5
+}
+{
+	"nome":"Mat",
+	"turma":3,
+	"professor":1
+}
+{
+	"nome":"PT",
+	"turma":3,
+	"professor":2
+}
+{
+	"nome":"Inglês",
+	"turma":3,
+	"professor":3
+}
+{
+	"nome":"Bio",
+	"turma":3,
+	"professor":4
+}
+{
+	"nome":"ADS",
+	"turma":3,
+	"professor":5
+}

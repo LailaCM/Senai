@@ -1,0 +1,146 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width: 100%;
+    background:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    display: flex;
+    margin: 10px;
+    
+    & .container10{
+        text-align: left;
+        width: 20%;
+        padding: 15px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+}
+
+.containerking{
+    & .containerbody {
+        background:  rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    
+        & .container1{
+            width: 10px;
+            padding: 130px;
+            background: red;
+            margin: 50px;
+            border-radius: 1000px;
+        
+        }
+        
+        & .container2{
+            width: 10px;
+            padding: 130px;
+            background: green;
+            margin: 50px;
+            border-radius: 1000px;
+        }
+        
+        & .container3{
+            width: 10px;
+            padding: 130px;
+            background: blue;
+            margin: 50px;
+            border-radius: 1000px;
+        }
+    
+    }
+    & .containerbody2 {
+        background:  rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    
+        & .container4{
+            width: 10px;
+            padding: 130px;
+            background: red;
+            margin: 400px;
+            border-radius: 1000px;
+        
+        }
+        
+        & .container5{
+            width: 10px;
+            padding: 130px;
+            background: green;
+            margin: 400px;
+            border-radius: 1000px;
+        }
+        
+        & .container6{
+            width: 10px;
+            padding: 130px;
+            background: blue;
+            margin: 400px;
+            border-radius: 1000px;
+        }
+    
+    }
+    & .containerbody3 {
+        background:  rgb(255, 255, 255);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    
+        & .container7{
+            width: 10px;
+            padding: 130px;
+            background: red;
+            margin: 200px;
+            border-radius: 1000px;
+        
+        }
+        
+        & .container8{
+            width: 10px;
+            padding: 130px;
+            background: green;
+            margin: 200px;
+            border-radius: 1000px;
+        }
+        
+        & .container9{
+            width: 10px;
+            padding: 130px;
+            background: blue;
+            margin: 200px;
+            border-radius: 1000px;
+        }
+    
+    }
+}
+
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & #botao {
+        text-decoration: none;
+        margin: 500px;
+        background-color: rgb(255, 255, 255);
+        color: rgb(110, 110, 110);
+        border: 1px solid rgb(103, 103, 103);
+        padding: 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 15px;
+        min-width: 150px;
+        text-align: center;
+    }
+}

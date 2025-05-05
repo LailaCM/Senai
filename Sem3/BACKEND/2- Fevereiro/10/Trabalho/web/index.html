@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sua lista telefonica</title>
+</head>
+
+<body>
+    <header>
+        <h1>Agênda Telefônica</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Cadastro / Edição</h2>
+            <form id="cadastro">
+                <label for="telefone">Telefone</label>
+                <input type="number" name="telefone" placeholder="Digite seu telefone" required>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" placeholder="Digite seu nome completo" required>
+                <label for="obs">Observação</label>
+                <input type="text" name="obs" placeholder="Digite uma observação">
+                <button type="submit">Cadastrar</button>
+                <button type="button" id="cancelarEdicao" style="display: none;">Cancelar</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Agênda Telefônica</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Telefone</th>
+                        <th>Nome</th>
+                        <th>Observações</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="telefones"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <h2 id="msg">Irei notificar suas ações!</h2>
+        <br>
+        <div id="container">
+            <h2>Produzido por Beatriz Vizeu, Eloá Florêncio, Laila Casadei</h2>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+</body>
+
+</html>

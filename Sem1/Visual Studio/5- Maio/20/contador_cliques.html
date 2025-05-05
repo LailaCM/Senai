@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quebra-Cabeça</title>
+    <style>
+        body {
+            background-color: #787693; /* Fundo cinza */
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .puzzle {
+            display: grid;
+            grid-template-columns: repeat(3, 80px);
+            gap: 5px;
+        }
+        .cell {
+            width: 80px;
+            height: 80px;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            background-color: #f7f6ff;
+            cursor: pointer;
+        }
+        .empty {
+            background-color: #ccc;
+        }
+        .message {
+            margin-top: 20px;
+            font-weight: bold;
+            color: green;
+        }
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #5a3f95;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Quebra-Cabeça</h2>
+        <div class="puzzle" id="puzzle">
+            <!-- Células criadas dinamicamente pelo JavaScript -->
+        </div>
+        <div class="message" id="message"></div>
+        <button onclick="misturar()">Misturar</button>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const puzzle = document.getElementById("puzzle");
+            const message = document.getElementById("message");
+            let emptyCell;
+
+            iniciar();
+            verificarOrganizacao();
+
+            function iniciar() {
+                const numbers = Array.from({ length: 8 }, (_, i) => i + 1);
+                numbers.sort(() => Math.random() - 0.5); // Embaralha os números
+                for (let i = 0; i < numbers.length; i++) {
+                    const cell = document.createElement("div");
+                    cell.classList.add("cell");
+                    cell.textContent = numbers[i];
+                    puzzle.appendChild(cell);
+                    if (numbers[i] === 8) {
+                        emptyCell = cell;
+                        emptyCell.classList.add("empty");
+                    }
+                }
+            }
+
+            puzzle.addEventListener("dragstart", dragStart);
+            puzzle.addEventListener("dragover", dragOver);
+            puzzle.addEventListener("drop", dragDrop);
+
+            function dragStart(event) {
+                const target = event.target;
+                if (target.classList.contains("cell") && !target.classList.contains("empty")) {
+                    target.style.opacity = '0.4';
+                    event.dataTransfer.effectAllowed = 'move';
+                    event.dataTransfer.setData('text/html', target.innerHTML);
+                }
+            }
+
+            function dragOver(event) {
+                event.preventDefault();
+            }
+
+            function dragDrop(event) {
+                const target = event.target;
+                if (target.classList.contains("cell") && target.classList.contains("empty")) {
+                    const draggedElement = document.querySelector(".dragging");
+                    target.innerHTML = draggedElement.innerHTML;
+                    draggedElement.innerHTML = event.dataTransfer.getData('text/html');
+                    verificarOrganizacao();
+                } else if (target.classList.contains("cell")) {
+                    const draggedElement = document.querySelector(".dragging");
+                    if (isAdjacent(draggedElement, emptyCell)) {
+                        target.innerHTML = draggedElement.innerHTML;
+                        draggedElement.innerHTML = event.dataTransfer.getData('text/html');
+                        verificarOrganizacao();
+                    }
+                }
+            }
+
+            function verificarOrganizacao() {
+                const cells = puzzle.querySelectorAll(".cell");
+                let organizado = true;
+                for (let i = 0; i < cells.length - 1; i++) {
+                    if (parseInt(cells[i].innerHTML) !== i + 1) {
+                        organizado = false;
+                        break;
+                    }
+                }
+                if (organizado) {
+                    message.innerText = "Parabéns, você é desocupado!";
+                } else {
+                    message.innerText = "";
+                }
+            }
+
+            function misturar() {
+                const cells = puzzle.querySelectorAll(".cell");
+                const numbers = Array.from({ length: 8 }, (_, i) => i + 1);
+                numbers.sort(() => Math.random() - 0.5); // Embaralha os números
+                for (let i = 0; i < cells.length - 1; i++) {
+                    cells[i].innerHTML = numbers[i];
+                }
+                verificarOrganizacao();
+            }
+
+            function isAdjacent(cell1, cell2) {
+                const index1 = Array.from(cell1.parentNode.children).indexOf(cell1);
+                const index2 = Array.from(cell2.parentNode.children).indexOf(cell2);
+                const diff = Math.abs(index1 - index2);
+                return (diff === 1 || diff === 3);
+            }
+        });
+    </script>
+</body>
+</html>
+

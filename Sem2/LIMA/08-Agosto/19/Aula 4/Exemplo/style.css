@@ -1,0 +1,85 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+.container{
+    width: 100%;
+    background: red;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    & .container2{
+        width: 20%;
+        padding: 15px;
+    }
+
+    & .container2 img{
+        width: 100px;
+        height: 50px;
+    }
+
+    & .container3{
+        width: 50%;
+        padding: 15px;
+
+    }
+
+    & .container3 nav a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-weight: bold;
+        margin: 5px;
+    }
+
+    & .container3 nav a:hover{
+        color: black;
+        font-size: 18px;
+        cursor:pointer
+    }
+
+}
+
+.containerbody {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+
+    & .divbanner img{
+        width: 900px;
+        height: auto;
+        border-radius: 16px;
+        box-shadow: 5px 5px 5px gray;
+    }
+
+    & .divbanner img:hover{
+        transform: scale(1.1);
+        transition: transform 0.5s ease;
+    }
+}
+.containertexto{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 25%;
+    padding-top: 30px;
+    & .divtexto1 span {
+        width: 30%;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    & .divimg{
+        width: 70%;
+    }
+    & .divimg img{
+        width: 250px;
+        height: 100px;
+    }
+
+}

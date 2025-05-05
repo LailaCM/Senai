@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encripta</title>
+</head>
+
+<body>
+    <input type="text" id="senha">
+    <input type="button" value="Encripta" onclick="encripta(senha.value)">
+    <label id="resp"></label>
+</body>
+
+<script>
+    function encripta() {
+        let senha = document.querySelector('#senha').value;
+        let caracteres = senha.split('');
+        let resultado = '';
+
+        caracteres.forEach(char => {
+            let deslocado;
+            if (char === 'u') {
+                deslocado = '#';
+            } else {
+                deslocado = String.fromCharCode(char.charCodeAt(0) + 7);
+            }
+            resultado += deslocado;
+        });
+
+        document.querySelector('#resp').innerText = resultado;
+    }
+</script>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Auxiliar</title>
+    <meta charset="UTF-8">
+</head>
+
+<body style="background-color: #ffffff; display: flex; flex-direction: column;align-items: center;">
+
+    <header style="background-color: rgb(0, 0, 0);display: flex; flex-direction: column;align-items:row;">
+        <h1 style="color:#ffffff; font-size: 50px; padding: 30px; text-align: center;">Guia para novos empreendedores
+    </Header>
+    </h1>
+    <fieldset>
+        <legend> Conte sobre sua empresa</legend>
+        <div>
+
+            <h2>Calculadora de Despesas</h2>
+
+            <form id="despesasForm">
+                <label for="aluguel">Aluguel:</label>
+                <input type="number" id="aluguel" name="aluguel">
+
+                <label for="agua">Água:</label>
+                <input type="number" id="agua" name="agua">
+
+                <label for="energia">Energia Elétrica:</label>
+                <input type="number" id="energia" name="energia">
+
+                <label for="folhaPagamento">Folha de Pagamento:</label>
+                <input type="number" id="folhaPagamento" name="folhaPagamento">
+
+                <label for="impostos">Impostos:</label>
+                <input type="number" id="impostos" name="impostos">
+
+                <button type="button" onclick="calcularDespesas()">Calcular Despesas</button>
+            </form>
+
+        </div>
+    </fieldset>
+
+ 
+    <main>
+        <h1 style="color:rgb(19, 38, 55); font-size: 20px;" id="totalGastos">Total de gastos: </h1>
+        <h1 style="color:rgb(19, 38, 55); font-size: 20px;" id="mediaGastos">Media de gastos: </h1>
+        <h1 style="color:rgb(19, 38, 55); font-size: 20px;" id="estimativaAnual">Estimativa Anual: </h1>
+    </main>
+
+    <footer style="background-color:#000000; color:hsl(0, 0%, 100%); font-size: 10;"> By:João Lucas, Laila, Milena </footer>
+
+<script src="script.js"></script>
+</body>
+
+</html>

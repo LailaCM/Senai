@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aguardando resposta da API</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+  <section id="cadastro" class="modal oculto">
+    <div class="janela">
+      <div>
+        <h2>Cadastro de Livro</h2>
+        <button class="fechar">X</button>
+      </div>
+      <form>
+        <input type="text" placeholder="Título" name="titulo" required />
+        <input type="text" placeholder="Autor" name="autor" required />
+        <input type="text" placeholder="Prateleira" name="prateleira" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+  </section>
+
+  <header>
+    <h1>Aguardando resposta da API</h1>
+    <nav>
+      <ul>
+        <li><a href="../livro">Livros</a></li>
+        <li><a href="../aluno/">Alunos</a></li>
+        <li><a href="../emprestimo/">Emprestimos</a></li>
+        <button id="botao-cadastro">Cadastrar</button>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="cards-container" id="lista-livros">
+    </div>
+  </main>
+
+  <footer>By Laila Casadei</footer>
+
+  <section id="detalhes" class="modal oculto">
+    <div class="janela">
+      <div>
+        <h2>Detalhes do Livro</h2>
+        <button class="fechar">X</button>
+      </div>
+      <form>
+        <input type="text" placeholder="Id" name="id" disabled />
+        <input type="text" placeholder="Título" name="titulo" required />
+        <input type="text" placeholder="Autor" name="autor" required />
+        <input type="text" placeholder="Prateleira" name="prateleira" required />
+        <button type="submit">Atualizar</button>
+      </form>
+      <button onclick="excluir()">Excluir</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

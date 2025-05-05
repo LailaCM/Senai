@@ -1,0 +1,6 @@
+
+Turma (id, nome, ano) 
+Aluno (ra, nome, nascimento) 
+professor (id, nome, especialidade) 
+Disciplina (id, nome, professor, turma) 
+Matricula (id, aluno, disciplina, data) 

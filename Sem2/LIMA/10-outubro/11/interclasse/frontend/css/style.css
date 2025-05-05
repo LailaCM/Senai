@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background: rgb(217, 217, 217);
+    color: rgb(96, 28, 28);
+    padding: 2vh 0;
+    text-align: center;
+    width: 100vw;
+
+    & .container {
+        width: 100vw;
+    }
+
+    & .container img {
+        width: 25vw;
+        height: auto;
+    }
+}
+
+form {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4vh;
+
+    & .formulario {
+        width: 30vw;
+        margin: auto;
+        padding: 10vh 5vw;
+        background: rgb(102, 4, 4);
+        color: white;
+        border-radius: 5vh;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        box-shadow: 0px 0px 2vh rgba(0, 0, 0, 0.534);
+    }
+
+    & .formulario input {
+        width: 100%;
+        padding: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 2vh;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+
+    & .formulario select {
+        width: 100%;
+        padding: 2vh;
+        margin-bottom: 2vh;
+        border-radius: 2vh;
+        border: none;
+        outline: none;
+        color: rgb(0, 0, 0);
+        box-sizing: border-box;
+    }
+
+    & .formulario input[type="submit"] {
+        background: rgb(163, 130, 0);
+        color: white;
+        width: 100%;
+        padding: 3vh 0;
+        border-radius: 2vh;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+
+    & .formulario input[type="submit"]:hover {
+        background-color: rgb(97, 79, 9);
+        transition: background-color 0.2s ease-in-out;
+        color: rgb(255, 255, 255);
+        box-shadow: 0 0 2vh rgb(0, 0, 0);
+        border-radius: 2vh;
+        cursor: pointer;
+    }
+}
+
+footer {
+    background: white;
+    color: rgb(96, 28, 28);
+    padding: 2vh 0;
+    text-align: center;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}

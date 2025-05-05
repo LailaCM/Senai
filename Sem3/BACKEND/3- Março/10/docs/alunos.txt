@@ -1,0 +1,76 @@
+
+	{
+		"ra": "2486",
+		"nome": "Laila Casadei",
+		"nascto": "2007-07-20T00:00:00.000Z"
+	}
+	{
+		"ra": "2476",
+		"nome": "Beatriz Vizeu",
+		"nascto": "2008-04-19T00:00:00.000Z"
+	}
+	{
+		"ra": "2194",
+		"nome": "Eloá Florêncio",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0001",
+		"nome": "João Silva",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0002",
+		"nome": "Maria Pinheiro",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0003",
+		"nome": "Jacinto Pinto",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0004",
+		"nome": "Ariadine Roberta",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0005",
+		"nome": "Akino Junior",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0006",
+		"nome": "Grizela Leite",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0007",
+		"nome": "Fabiana Costa",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0008",
+		"nome": "Duda Silva",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0009",
+		"nome": "Milena Felisbelo",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0010",
+		"nome": "João Lucas",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0011",
+		"nome": "Hermione Granger",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}
+	{
+		"ra": "0012",
+		"nome": "Harry Potter",
+		"nascto": "2008-06-17T00:00:00.000Z"
+	}

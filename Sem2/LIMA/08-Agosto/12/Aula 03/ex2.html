@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Exercício 02</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <h1>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h1>
+		<form action="" method="">
+			<label for="nome" >Login</label>
+			<input type="text" id="nome" placeholder="" required/>
+            <br>
+            <label for="senha">Senha</label>
+			<input id="senha" type="password"/ required/>
+            <br>
+            <label for="status">Status</label>
+			<select id="status" required/>
+				<option>Ativo</option>
+				<option>Inativo</option>
+			</select>
+			<br>
+			<legend>Tipo</legend>
+			<input type="radio" id="tec" name="tipo" />
+			<label for="tec">Tecnico</label>
+			<input type="radio" id="prof" name="tipo"/ >
+			<label for="prof">Professor</label>
+			<input type="radio" id="aluno" name="tipo"/>
+			<label for="aluno">Aluno</label>
+			<br>
+			<label for="datanasc">Data de criação</label>
+			<input id="datanasc" type="date" />
+			<br>
+			<legend>Perfil</legend>
+			<input type="radio" id="conv" name="perfil" />
+			<label for="conv">Convidado</label>
+			<input type="radio" id="adm" name="perfil"/>
+			<label for="adm">Administrador</label>
+			<br>
+            <label for="obs">Observações</label>
+            <br>
+			<textarea id="obs"></textarea>
+			<br>	
+            <legend> Módulos</legend>
+			<input type="checkbox" id="compras"/>
+			<label for="compras">Compras</label>
+			<input type="checkbox" id="bib"/>
+			<label for="bib">Biblioteca</label>
+			<input type="checkbox" id="acad"/>
+			<label for="acad">Acadêmico</label>
+			<input type="checkbox" id="doc"/>
+			<label for="doc">Documentação</label>
+            <input type="checkbox" id="rh"/>
+			<label for="rh">Recursos Humanos</label>
+			<br>
+			<input type="reset" value="Excluir"/>
+			<input type="submit" value="Cadastrar" />
+		</form>
+	</body>
+</html>

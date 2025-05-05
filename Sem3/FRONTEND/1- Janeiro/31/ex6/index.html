@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classificação da Turma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Classificação da Turma</h1>
+    </header>
+    <main>
+        <div class="container">
+            <label for="idades">Digite as idades separadas por vírgula:</label>
+            <input type="text" required id="idades" placeholder="Ex: 20, 30, 40, 50">
+            <button onclick="calcularMediaIdade()">Calcular</button>
+            <p id="mensagem"></p>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

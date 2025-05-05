@@ -1,0 +1,23 @@
+*{
+    margin: 5px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(208, 93, 131);
+
+}
+body{
+    background-color: rgb(243, 221, 227);
+    justify-content: space-between;
+    height: 800px;
+}
+
+header,footer{
+    background-color: rgb(68, 84, 143);
+    color: aliceblue;
+    width: 100%;
+    text-align: center;
+    height: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

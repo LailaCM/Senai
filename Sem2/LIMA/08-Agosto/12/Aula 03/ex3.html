@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Exercício 03</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+        <h1>Formulário</h1>
+		<form action="" method="">
+			<fieldset>
+                <legend>Dados pessoais</legend>
+                <label for="nome" >Nome:</label>
+			    <input type="text" id="nome" placeholder="" required/>
+			    <br>
+			    <label for="endereco">Endereço:</label>
+			    <input type="text" id="endereco" placeholder="" required/>
+			    <br>
+                <label for="cidade">Cidade:</label>
+			    <input type="text" id="cidade" placeholder="" required/>
+			    <br>
+                <label for="estado">Estado:</label>
+			    <select id="estado">
+				    <option>SP</option>
+				    <option>MG</option>
+				    <option>RJ</option>
+				    <option>SC</option>
+			    </select>
+			</fieldset>
+			<br>
+			<fieldset>
+                <legend>Dados profissionais</legend>
+				<legend>Natureza do cargo</legend>
+				<input type="radio" id="ge" name="NC">
+				<label for="ge">Gerencia</label>
+				<input type="radio" id="fin" name="NC">
+				<label for="fin">Financeiro</label>
+				<input type="radio" id="rec" name="NC">
+				<label for="rec">Recepção</label>
+                <input type="radio" id="adm" name="NC">
+				<label for="adm">Administrativo</label>
+                <input type="radio" id="juri" name="NC">
+				<label for="juri">Jurídico</label>
+                <br>
+                <legend>Área de interesse</legend>
+				<input type="checkbox" id="comp"/>
+				<label for="comp">Computação</label>
+				<input type="checkbox" id="bio"/>
+				<label for="bio">Biologia</label>
+				<input type="checkbox" id="ma"/>
+				<label for="ma">Meio Ambiente</label>
+				<input type="checkbox" id="eng"/>
+				<label for="eng">Engenharia</label>
+                <input type="checkbox" id="hist"/>
+				<label for="hist">História</label>
+                <br>
+			    <label for="info">Mini currículo:</label>
+			    <textarea id="info"></textarea>
+			</fieldset>
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpar"/>
+		</form>
+	</body>
+</html>

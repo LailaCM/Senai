@@ -1,0 +1,172 @@
+* * {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    background: black;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5vw;
+
+        & .titulo {
+            width: 30vw;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8vw;
+
+        }
+
+        & .links {
+            width: 30vw;
+
+            & a {
+                text-decoration: none;
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1vw;
+                margin: 1vw;
+            }
+
+            & a:hover {
+                text-decoration: none;
+                color: pink;
+                cursor: pointer;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1vw;
+                margin: 1vw;
+            }
+
+        }
+
+    }
+
+}
+
+main {
+    width: 100vw;
+    padding-left: 2vw;
+    padding-top: 3vw;
+
+    & .container2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+
+        & .imagem {
+            width: 45vw;
+
+            & img {
+                width: 45vw;
+                height: auto;
+            }
+
+        }
+
+        & .textos {
+            width:  40vw;
+            padding-left: 0.5vw;
+
+            & h1{
+                color: black;
+                font-size: 3vw;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            & span{
+                color: black;
+                font-size: 1vw;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: normal;
+                margin-top: 3vw;
+            }
+
+            & button{
+            margin-top: 1vw;
+            background: blue;
+            padding: 0.6vw;
+            border: none;
+            border-radius: 0.2vw;
+            color: white;
+            font-size: 1vw;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        }
+
+    }
+
+    & .banner{
+        background: gray;
+        border-radius: 0.5vw;
+        padding: 2vw;
+        color: white;
+        font-size: 0.8vw;
+        text-align: center;
+        width: 80vw;
+        margin-top: 2vw;
+        margin-left: 7vw;
+    }
+
+    & .cards{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-top: 2vw;
+
+        & .div1, .div2, .div3{
+            width: 25vw;
+            margin: 2.5vw;
+            border: 0.1vw solid black;
+            padding: 1.0vw;
+            border-radius: 0.5vw;
+            
+        & button{
+            margin-top: 1vw;
+            background: blue;
+            padding: 0.6vw;
+            border: none;
+            border-radius: 95vw;
+            color: white;
+            font-size: 1vw;
+            font-family: Arial, Helvetica, sans-serif;
+            }
+
+        }
+
+    }
+
+}
+
+footer{
+    background: black;
+    padding: 4vw;
+    margin-top: 2vw;
+    text-align: center;
+    color: white;
+    font-size: 0.9vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and(min-width: 900px){
+    .container2{
+        width: 2vw;
+        background: red;
+        width: 50vw;
+        display: none;    
+    }
+    
+    .cards{
+        background: black;
+        color: white;
+        border-color: white;
+        border: 0.1 solid white;
+        width: 50vw;
+    }
+}

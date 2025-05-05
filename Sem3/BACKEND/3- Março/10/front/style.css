@@ -1,0 +1,169 @@
+
+:root {
+    --p1: #f0f0f0;
+    --p2: #400860;
+    --p3: #ffffff; 
+    --p4: #a739a0; 
+    --p5: #c5bcdf; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: var(--p1); 
+}
+
+header {
+    background-color: var(--p2); 
+    color: var(--p3); 
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h1 {
+        margin-left: 70px;
+    }
+
+    .container {
+        width: 50%;
+
+        a {
+            color: var(--p3);
+            text-decoration: none;
+            margin: 0 10px;
+            list-style-type: none;
+        }
+    }
+}
+
+main {
+    .cadastro {
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-left: 70px;
+    }
+
+    .apresentaralunos {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        margin-top: 80px;
+        border-bottom: 1px solid var(--p5);
+
+        table {
+            margin-left: 60px;
+            width: 100%;
+            border-collapse: collapse;
+
+            th,
+            td {
+                padding: 10px;
+                text-align: left;
+            }
+
+            th {
+                background-color: var(--p1);
+            }
+
+            tr:nth-child(even) {
+                background-color: var(--p1);
+            }
+
+            tr:hover {
+                background-color: var(--p5);
+            }
+        }
+    }
+}
+
+table button {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 8px 50px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer {
+    background-color: var(--p2);
+    color: var(--p3);
+    padding: 10px 0;
+    text-align: center;
+    position: relative; 
+    bottom: 0;
+    width: 100%;
+    margin-top: 0px; 
+}
+
+button {
+    width: 10%;
+    padding: 15px;
+    color: var(--p3); 
+    font-size: 2vh;
+    border: none;
+    margin: 10px 0;
+    background-color: var(--p4); 
+    border-radius: 5px;
+    margin-top: 50px;
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: var(--p5);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.modal-conteudo {
+    background-color: var(--p3); 
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid var(--p5); 
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+
+    input {
+        width: 100%;
+        padding: 1vw;
+        margin-top: 1vw;
+    }
+}
+
+.fechar {
+    color: var(--p5);
+    font-size: 28px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: var(--p2); 
+    text-decoration: none;
+    cursor: pointer;
+}
