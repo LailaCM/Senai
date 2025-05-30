@@ -1,0 +1,139 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-size: cover;
+  min-height: 100vh;
+  margin: 0;
+  color: var(--texto-escuro);
+}
+
+.login-bg {
+  background: url('../../docs/image.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--branco-puro);
+  padding: var(--padding-container);
+  border-radius: 12px;
+  box-shadow: var(--sombra-suave);
+  width: 320px;
+  transition: var(--transicao-padrao);
+}
+
+
+.login-container h2 {
+  text-align: left;
+}
+
+.login-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+h2 {
+  text-align: left;
+  margin-bottom: var(--margin-titulo);
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: var(--margin-inputs);
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 0.9rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: var(--transicao-padrao);
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  border-color: var(--roxo-principal);
+  box-shadow: 0 0 0 3px rgba(123, 104, 238, 0.2);
+}
+
+
+button {
+  width: 100%;
+  padding: 0.9rem;
+  background-color: var(--roxo-principal);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: var(--transicao-padrao);
+  letter-spacing: 0.5px;
+}
+
+button:hover {
+  background-color: var(--roxo-escuro);
+  transform: translateY(-2px);
+}
+
+.home {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.post {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #0001;
+  margin: 16px 0;
+  padding: 16px;
+}
+
+@media (max-width: 700px) {
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    border: 2px solid #d1d5db;
+    border-radius: 8px;
+    background: #f8f9fa;
+    font-size: 1.05rem;
+    padding: 1rem;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    width: 90%;
+  }
+
+  input[type="email"]:focus,
+  input[type="password"]:focus {
+    border-color: var(--roxo-principal);
+    box-shadow: 0 0 0 2px rgba(103, 142, 182, 0.15);
+    outline: none;
+  }
+
+  button {
+    width: 90%;
+    padding: 1rem;
+    font-size: 1.05rem;
+    margin-top: 10px;
+  }
+
+  .login-container {
+    width: 100vw;
+    padding: 1.5rem;
+  }
+}

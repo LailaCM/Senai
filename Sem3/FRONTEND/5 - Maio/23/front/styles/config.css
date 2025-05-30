@@ -1,0 +1,16 @@
+:root {
+  --roxo-principal: #678eb6;      
+  --roxo-escuro: #272b4b;          
+  --fundo-claro: #f8f9fa;          
+  --branco-puro: #ffffff;
+  
+  --texto-escuro: #2c3e50;
+  --texto-cinza: #7f8c8d;
+  
+  --padding-container: 2.5rem;
+  --margin-titulo: 1.8rem;
+  --margin-inputs: 1.2rem;
+  
+  --sombra-suave: 0 5px 15px rgba(0, 0, 0, 0.08);
+  --transicao-padrao: all 0.25s ease;
+}
