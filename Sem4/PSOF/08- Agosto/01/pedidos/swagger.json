@@ -1,0 +1,320 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API de Produtos (Node + Prisma + MySQL[MariaDB])",
+    "version": "1.0.0",
+    "description": "Documentação da API Pedidos"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3001",
+      "description": "Servidor local"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Teste",
+      "description": "Endpoint de teste da API"
+    },
+    {
+      "name": "CRUD de Usuarios",
+      "description": "Endpoints de usuarios"
+    },
+    {
+      "name": "CRUD de Produtos",
+      "description": "Endpoints de produtos"
+    },
+    {
+      "name": "CRUD de Pedidos",
+      "description": "Endpoints de pedidos"
+    }
+  ],
+  "paths": {
+    "/": {
+      "get": {
+        "tags": ["Teste"],
+        "summary": "Endpoint de teste geral da API",
+        "responses": {
+          "200": {
+            "description": "Retorna uma mensagem de teste"
+          },
+          "500": {
+            "description": "Erro ao processar a requisição"
+          }
+        }
+      }
+    },
+    "/api/usuarios": {
+      "get": {
+        "tags": ["CRUD de Usuarios"],
+        "summary": "Listar todos os usuários",
+        "responses": {
+          "200": {
+            "description": "Lista de usuários cadastrados"
+          }
+        }
+      },
+      "post": {
+        "tags": ["CRUD de Usuarios"],
+        "summary": "Cadastrar novo usuário",
+        "requestBody": {
+          "description": "Dados do usuário",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "email": { "type": "string" },
+                  "senha": { "type": "string" },
+                  "tipo": { "type": "string" }
+                },
+                "required": ["nome", "email", "senha", "tipo"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Usuário criado com sucesso"
+          },
+          "400": {
+            "description": "Erro nos dados enviados"
+          }
+        }
+      }
+    },
+    "/api/usuarios/{id}": {
+      "put": {
+        "tags": ["CRUD de Usuarios"],
+        "summary": "Atualizar usuário por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "description": "Dados atualizados do usuário",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "email": { "type": "string" },
+                  "senha": { "type": "string" },
+                  "tipo": { "type": "string" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Usuário atualizado com sucesso"
+          },
+          "400": {
+            "description": "Erro ao atualizar usuário"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["CRUD de Usuarios"],
+        "summary": "Deletar usuário por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Usuário deletado com sucesso"
+          },
+          "404": {
+            "description": "Usuário não encontrado"
+          }
+        }
+      }
+    },
+    "/api/produtos": {
+      "get": {
+        "tags": ["CRUD de Produtos"],
+        "summary": "Listar todos os produtos",
+        "responses": {
+          "200": {
+            "description": "Lista de produtos"
+          }
+        }
+      },
+      "post": {
+        "tags": ["CRUD de Produtos"],
+        "summary": "Cadastrar novo produto",
+        "requestBody": {
+          "description": "Dados do produto",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "descricao": { "type": "string" },
+                  "preco": { "type": "number" }
+                },
+                "required": ["nome", "descricao", "preco"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Produto criado com sucesso"
+          }
+        }
+      }
+    },
+    "/api/produtos/{id}": {
+      "ptch": {
+        "tags": ["CRUD de Produtos"],
+        "summary": "Atualizar produto por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "description": "Dados atualizados do produto",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "descricao": { "type": "string" },
+                  "preco": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Produto atualizado com sucesso"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["CRUD de Produtos"],
+        "summary": "Deletar produto por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Produto deletado com sucesso"
+          }
+        }
+      }
+    },
+    "/api/pedidos": {
+      "get": {
+        "tags": ["CRUD de Pedidos"],
+        "summary": "Listar todos os pedidos",
+        "responses": {
+          "200": {
+            "description": "Lista de pedidos"
+          }
+        }
+      },
+      "post": {
+        "tags": ["CRUD de Pedidos"],
+        "summary": "Cadastrar novo pedido",
+        "requestBody": {
+          "description": "Dados do pedido",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "usuarioId": { "type": "integer" },
+                  "produtoId": { "type": "integer" },
+                  "quantidade": { "type": "integer" }
+                },
+                "required": ["usuarioId", "produtoId", "quantidade"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Pedido criado com sucesso"
+          }
+        }
+      }
+    },
+    "/api/pedidos/{id}": {
+      "ptch": {
+        "tags": ["CRUD de Pedidos"],
+        "summary": "Atualizar pedido por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "requestBody": {
+          "description": "Dados atualizados do pedido",
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "usuarioId": { "type": "integer" },
+                  "produtoId": { "type": "integer" },
+                  "quantidade": { "type": "integer" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Pedido atualizado com sucesso"
+          }
+        }
+      },
+      "delete": {
+        "tags": ["CRUD de Pedidos"],
+        "summary": "Deletar pedido por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Pedido deletado com sucesso"
+          }
+        }
+      }
+    }
+  }
+}

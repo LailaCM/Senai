@@ -1,0 +1,218 @@
+:root {
+  --p1:rgb(114, 42, 192);  
+  --p2:rgb(93, 36, 179);   
+  --p3:rgb(140, 106, 232); 
+
+  --bg-light: #f9fafb;
+  --bg-dark: #111827;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --error: #ef4444;
+
+  --space-xs: 6px;
+  --space-sm: 12px;
+  --space-md: 20px;
+  --space-lg: 32px;
+  --space-xl: 48px;
+
+  --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --border-radius: 12px;
+
+  --shadow-light: rgba(0, 0, 0, 0.05);
+  --shadow-strong: rgba(0, 0, 0, 0.15);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-light);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 900px;
+  margin: var(--space-xl) auto;
+  padding: 0 var(--space-md);
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: var(--space-lg);
+  color: var(--p2);
+  letter-spacing: 1.2px;
+  user-select: none;
+}
+
+input {
+  width: 100%;
+  padding: var(--space-sm);
+  margin: var(--space-sm) 0 var(--space-md);
+  border: 2px solid var(--p3);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--p1);
+  box-shadow: 0 0 8px var(--p3);
+}
+
+button {
+  display: inline-block;
+  background-color: var(--p1);
+  color: white;
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  box-shadow: 0 6px 12px var(--shadow-light);
+  user-select: none;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--p2);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 20px var(--shadow-strong);
+  outline: none;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 12px var(--shadow-light);
+}
+
+.login-container {
+  max-width: 400px;
+  margin: var(--space-xl) auto 0;
+  padding: var(--space-lg);
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 15px var(--shadow-light);
+}
+
+.error-msg {
+  color: var(--error);
+  text-align: center;
+  margin-top: var(--space-sm);
+  font-weight: 600;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+  margin-top: var(--space-lg);
+}
+
+.card {
+  background-color: white;
+  padding: var(--space-md);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  box-shadow: 0 6px 15px var(--shadow-light);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  user-select: none;
+}
+
+.card:hover {
+  box-shadow: 0 12px 25px var(--shadow-strong);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin: 0 0 var(--space-xs) 0;
+  font-size: 1.2rem;
+  color: var(--p2);
+  font-weight: 700;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-md);
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-md);
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: var(--space-lg);
+  border-radius: var(--border-radius);
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 12px 24px var(--shadow-strong);
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--p2);
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: var(--p1);
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 0 var(--space-sm);
+  }
+
+  .login-container {
+    margin-top: var(--space-lg);
+    padding: var(--space-md);
+  }
+}
